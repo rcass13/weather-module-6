@@ -1,78 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-​
+  ​
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">​
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    ​
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    ​ <title>Weather Dashboard</title>
-</head>
-​
+    ​
+    <title>Weather Dashboard</title>
+  </head>
+  ​
 
-<body>
-    <header class="container-fluid text-center">
-        <h1>Weather Dashboard</h1>
+  <body>
+    <header class="container-fluid text-center text-white bg-dark p-2">
+      <h1>Weather Dashboard</h1>
     </header>
 
     <div class="container-fluid">
-        <aside>
-            <h4>Search for City</h4>
-            <div class="form-inline">
-                <input class="form-control" type="text" id="search-value" placeholder="Type city name here..."/>
-                <button id="city-search-btn" ><i class="fa fa-search"></i></button>
-
-            </div>
-            <ul id="search-history"></ul>
-        </aside>
-        
-        <div class="col-lg-9 container-fluid">
-            <div id="today" class="mt-3">
-                <card>
-                    <h1 id="cityName" class="card"></h1>
-                    <h5 id="temp"></h5>
-                    <p id="windSpeed"></p>
-                    <p id="humidity"></p>
-                </card>
-            </div>
-            <div id="forecast" class="card-deck mt-3"></div>
-            <div class="card-deck mt-3" id="day1">
-                <h3 id="day1Name"></h3>
-                <img src="" id="icon1" alt="">
-                <div class="card-text" id="day1Temp"></div>
-                <div class="card-text" id="day1Humid"></div>
-            </div>
-            <div class="card-deck mt-3" id="day2">
-                <h3 id="day2Name"></h3>
-                    <!-- <div> -->
-                        <img src="" id="icon2" alt="">
-                    <!-- </div> -->
-                <div id="day2Temp"></div>
-                <div id="day2Humid"></div>
-            </div>
-            <div class="card-deck mt-3" id="day3">
-                <h3 id="day3Name"></h3>
-                <img src="" id="icon3" alt="">
-                <div class="card-text" id="day3Temp"></div>
-                <div class="card-text" id="day3Humid"></div>
-            </div>
-            <div class="card-deck mt-3" id="day4">
-                <h3 id="day4Name"></h3>
-                <img src="" id="icon4" alt="">
-                <div class="card-text" id="day4Temp"></div>
-                <div class="card-text" id="day4Humid"></div>
-            </div>
-            <div class="card-deck mt-3" id="day5">
-                <h3 id="day5Name"></h3>
-                <img src="" id="icon5" alt="">
-                <div class="card-text" id="day5Temp"></div>
-                <div class="card-text" id="day5Humid"></div>
-            </div>
+      <aside class="col-lg-12 bg-light">
+        <h4>Search for City</h4>
+        <div class="form-inline form-group">
+          <input
+            class="form-control"
+            type="text"
+            id="search-value"
+            placeholder="Type city name here..."
+          />
+          <button class="btn btn-primary" id="city-search-btn"><i class="fa fa-search"></i></button>
         </div>
+        <ul class="list-group list-group-flush" id="search-history"></ul>
+      </aside>
+
+      <div class="col-lg-8 container-fluid">
+        <div id="today" class="mt-3">
+          <card>
+            <h1 id="cityName"></h1>
+            <img src="" id="iconToday" alt="" />
+            <h5 id="temp"></h5>
+            <p id="windSpeed"></p>
+            <p id="humidity"></p>
+          </card>
+        </div>
+
+        <div id="forecast" class="row col-lg-8mt-3">
+          <div class="card bg-danger card-deck col-md-2 card-body mt-3" id="day1">
+            <h6 id="day1Name"></h6>
+            <img src="" id="icon1" alt="" />
+            <div class="card-text" id="day1Temp"></div>
+            <div class="card-text" id="day1Humid"></div>
+          </div>
+          <div class="card bg-warning card-deck col-md-2 card-body mt-3" id="day2">
+            <h6 id="day2Name"></h6>
+            <img src="" id="icon2" alt="" />
+            <div class="card-text" id="day2Temp"></div>
+            <div class="card-text" id="day2Humid"></div>
+          </div>
+          <div class="card bg-success card-deck col-md-2 card-body mt-3 " id="day3">
+            <h6 id="day3Name"></h6>
+            <img src="" id="icon3" alt="" />
+            <div class="card-text" id="day3Temp"></div>
+            <div class="card-text" id="day3Humid"></div>
+          </div>
+          <div class="card bg-info card-deck col-md-2 card-body mt-3" id="day4">
+            <h6 id="day4Name"></h6>
+            <img src="" id="icon4" alt="" />
+            <div class="card-text" id="day4Temp"></div>
+            <div class="card-text" id="day4Humid"></div>
+          </div>
+          <div class="card bg-primary card-deck col-md-2 card-body mt-3" id="day5">
+            <h6 id="day5Name"></h6>
+            <img src="" id="icon5" alt="" />
+            <div class="card-text" id="day5Temp"></div>
+            <div class="card-text" id="day5Humid"></div>
+          </div>
+        </div>
+      </div>
     </div>
 
-
     <script src="./assets/js/script.js"></script>
-</body>
+  </body>
+</html>
