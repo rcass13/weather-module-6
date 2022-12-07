@@ -1,5 +1,4 @@
 # weather-module-6
-
 The Assignment: Weather Dashboard
 *GIVEN a weather dashboard with form inputs
 
@@ -29,17 +28,15 @@ The Assignment: Weather Dashboard
 
 
 # What I learned
-
 In this assignment I learned how to link an API and manipulate the data, which was a very challenging feat but now that I know how, I'm sure I will use this very valuable skill forever in my web development career. It made he have to look very closely for tiny details to build the URL; even one tiny symbol being missing calls nothing. Another challenge was linking the icons. I experimented with bootstrap which I have come to like a lot, it is very convenient for styling. I had some trouble with displaying the date on the cards and also with the list being able to re-search previous cities. 
 
 
 
 # Screenshots
-
 Screenshots are located in weather-module-6/assets/Images
 
-# Screenshots Deployment URL
-
+# Deployment URL
+https://rcass13.github.io/weather-module-6/
 
 
 
